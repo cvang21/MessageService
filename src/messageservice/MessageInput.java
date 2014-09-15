@@ -9,8 +9,8 @@ package messageservice;
  *
  * @author Owner
  */
-public class MessageManager {
+public interface MessageInput {
     
-    
+    public abstract String readln();
     
 }

@@ -7,7 +7,7 @@ package messageservice;
 
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
 public class StartUpMessageService {
 
@@ -15,7 +15,9 @@ public class StartUpMessageService {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        MessageManager mm = new MessageManager();
+        
+        
     }
     
 }

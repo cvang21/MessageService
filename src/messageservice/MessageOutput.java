@@ -7,8 +7,10 @@ package messageservice;
 
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
-public class MessageOutput {
+public interface MessageOutput {
     
+    public abstract void writeln( String line );  
+
 }

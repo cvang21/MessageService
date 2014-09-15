@@ -9,8 +9,6 @@ package messageservice;
  *
  * @author Owner
  */
-public class MessageManager {
-    
-    
+public class MessageOutputGUI {
     
 }

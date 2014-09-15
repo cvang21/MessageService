@@ -5,10 +5,19 @@
  */
 package messageservice;
 
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
-public class MessageInputFromGUI {
-    
+public class MessageInputFromGUI implements MessageInput{
+
+    @Override
+    public String readln() {
+       String input;
+       input = JOptionPane.showInputDialog("Please enter a message, then press return: ");
+       return input;
+    }
 }
+        
