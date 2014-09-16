@@ -19,8 +19,7 @@ public class MessageManager {
         this.SetOutput(output);
     }
     public void processMessage() {
-       MessageInput message = input.getMessage();
-       output.outputMessage(message);
+       output.outputMessage(this.input);
     }
     
     public MessageInput getInput(){

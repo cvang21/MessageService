@@ -15,7 +15,7 @@ public class MessageOutputGUI implements MessageOutput{
 
     @Override
     public void outputMessage(MessageInput line) {
-        JOptionPane.showMessageDialog(null, line);
+        JOptionPane.showMessageDialog(null, line.getMessage());
         
     }
 

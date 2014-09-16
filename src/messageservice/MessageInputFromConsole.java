@@ -14,9 +14,11 @@ import java.util.Scanner;
 public class MessageInputFromConsole implements MessageInput {
 
     @Override
-    public String getMessage() {
+    public Object getMessage() {
     
             Scanner input = new Scanner(System.in);
+            System.out.println("What's your message");
+            
             return input.nextLine();
         }
 }
