@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class MessageInputFromGUI implements MessageInput{
 
     @Override
-    public String readln() {
+    public String getMessage() {
        String input;
        input = JOptionPane.showInputDialog("Please enter a message, then press return: ");
        return input;

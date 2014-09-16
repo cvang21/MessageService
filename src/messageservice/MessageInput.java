@@ -11,6 +11,6 @@ package messageservice;
  */
 public interface MessageInput {
     
-    public abstract String readln();
+    public abstract String getMessage();
     
 }

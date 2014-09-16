@@ -11,12 +11,11 @@ package messageservice;
  */
 public class StartUpMessageService {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        MessageManager mm = new MessageManager();
-        
+        MessageInput input = new MessageInputFromConsole();
+        MessageOutput output = new MessageOutputGUI();
+        MessageManager manager = new MessageManager(input,output);
+        manager.processMessage();
         
     }
     

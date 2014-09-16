@@ -11,6 +11,6 @@ package messageservice;
  */
 public interface MessageOutput {
     
-    public abstract void writeln( String line );  
+    public abstract void outputMessage(MessageInput line);
 
 }

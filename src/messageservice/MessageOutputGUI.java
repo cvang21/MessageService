@@ -5,10 +5,19 @@
  */
 package messageservice;
 
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
-public class MessageOutputGUI {
+public class MessageOutputGUI implements MessageOutput{
+
+    @Override
+    public void outputMessage(MessageInput line) {
+        JOptionPane.showMessageDialog(null, line);
+        
+    }
+
     
 }
