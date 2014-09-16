@@ -13,6 +13,6 @@ public class MessageOutputConsole implements MessageOutput {
     @Override
     public void outputMessage(MessageInput line) {
         System.out.println("Here is the text you entered, which I've copied below.");
-        System.out.println( line );
+        System.out.println( line.getMessage());
     }
 }

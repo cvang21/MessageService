@@ -12,8 +12,10 @@ package messageservice;
 public class StartUpMessageService {
 
     public static void main(String[] args) {
-        MessageInput input = new MessageInputFromConsole();
-        MessageOutput output = new MessageOutputGUI();
+//      MessageInput input = new MessageInputFromConsole();
+        MessageInput input = new MessageInputFromGUI();
+//        MessageOutput output = new MessageOutputGUI();
+        MessageOutput output = new MessageOutputConsole();
         MessageManager manager = new MessageManager(input,output);
         manager.processMessage();
         
