@@ -15,8 +15,8 @@ public class MessageManager {
     private MessageOutput output;
     
     public MessageManager(MessageInput input, MessageOutput output){
-        this.SetInput(input);
-        this.SetOutput(output);
+        this.setInput(input);
+        this.setOutput(output);
     }
     public void processMessage() {
        output.outputMessage(this.input);
@@ -29,11 +29,11 @@ public class MessageManager {
     public MessageOutput getOutput(){
         return output;
     }
-    public void SetInput (MessageInput input){
+    public void setInput (MessageInput input){
         this.input = input;
     }
     
-    public void SetOutput (MessageOutput output){
+    public void setOutput (MessageOutput output){
         this.output = output;
     }
 }

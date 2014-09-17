@@ -11,8 +11,8 @@ package messageservice;
  */
 public class MessageOutputConsole implements MessageOutput {
     @Override
-    public void outputMessage(MessageInput line) {
+    public void outputMessage(MessageInput theMessage) {
         System.out.println("Here is the text you entered, which I've copied below.");
-        System.out.println( line.getMessage());
+        System.out.println( theMessage.getMessage());
     }
 }
